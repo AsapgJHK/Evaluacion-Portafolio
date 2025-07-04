@@ -1,0 +1,491 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #083869; 
+    color: #333;
+    line-height: 1.6;
+    cursor: url('./Assets/cursor_eva02.cur'), auto; 
+}
+
+
+.bg-oscuro {
+    background-color: #2c3e50;
+}
+
+.text-blanco {
+    color: #fff;
+}
+
+.bg-claro {
+    background-color: #fcfcfc; 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.seccion-bienvenida {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(to bottom,
+            rgba(226, 61, 40, 0.5), 
+            rgba(242, 153, 74, 0.5)  
+        ),
+        url('./Assets/asuka\ langley.png'); 
+
+    
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.seccion-bienvenida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.seccion-bienvenida .container {
+    position: relative;
+    z-index: 2; 
+    
+}
+
+.titulo-principal {
+    font-weight: 700; 
+    font-size: 4.5rem; 
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #fff; 
+    text-shadow:
+        0 0 7px rgba(255, 69, 0, 0.8),   
+        0 0 10px rgba(255, 69, 0, 0.8),
+        0 0 21px rgba(255, 69, 0, 0.7),
+        0 0 42px rgba(255, 69, 0, 0.6),
+        0 0 82px rgba(255, 69, 0, 0.5),
+        0 0 92px rgba(255, 69, 0, 0.4),
+        0 0 102px rgba(255, 69, 0, 0.3),
+        0 0 151px rgba(255, 69, 0, 0.2);
+}
+
+.texto-descripcion {
+    font-size: 1.25rem; 
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+.titulo-principal,
+.texto-descripcion {
+
+    opacity: 0; 
+}
+
+
+
+.imagen-bienvenida img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+.seccion-mi-trabajo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    background:
+        linear-gradient(to bottom,
+            rgba(226, 61, 40, 0.5), 
+            rgba(242, 153, 74, 0.5)  
+        ),
+        url('./Assets/fondo\ imagen\ seccion\ mi\ trabajo.png'); 
+
+        
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #fcfcfc
+    
+}
+
+.titulo-seccion {
+    font-size: 3em;
+    font-weight: bold;
+    color:   #fcfcfc; 
+    margin-bottom: 20px;
+      text-shadow: 
+          
+        0 0 3px rgba(252, 252, 252, 0.8),   
+        0 0 6px rgba(252, 252, 252, 0.7),  
+        0 0 10px rgba(252, 252, 252, 0.5), 
+        0 0 20px rgba(252, 252, 252, 0.3), 
+        0 0 14px rgba(252, 252, 252, 0.2)
+}
+
+.subtitulo-seccion {
+    font-size: 1.2em;
+    color: #fcfcfc; 
+    margin-bottom: 40px;
+    text-shadow: 
+        0 0 3px rgba(252, 252, 252, 0.8),   
+        0 0 6px rgba(252, 252, 252, 0.7),  
+        0 0 10px rgba(252, 252, 252, 0.5), 
+        0 0 15px rgba(252, 252, 252, 0.3), 
+        0 0 25px rgba(252, 252, 252, 0.2)
+    
+}
+
+
+.tarjeta-proyecto {
+
+    background-color: #fcfcfc; 
+    color: #333; 
+    border: 7px solid #F2994A; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px; 
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+}
+
+.tarjeta-proyecto .card-title {
+    color: #E6122B; 
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      
+    
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #eee;
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.nombre-proyecto {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.descripcion-proyecto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #607d8b;
+    flex-grow: 1; 
+    margin-bottom: 15px; 
+}
+
+.iconos-proyecto {
+    margin-top: auto; 
+    text-align: right; 
+}
+
+.enlace-icono {
+    display: inline-block;
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+     
+}
+
+.enlace-icono:hover {
+    display: inline-block;
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+     
+}
+
+.icono-social {
+    width: 28px; 
+    height: 28px; 
+    opacity: 1; 
+    
+}
+
+.icono-social:hover .icono-social {
+    opacity: 0.3;
+}
+
+.icono-social:hover {
+      
+    
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+} 
+
+/* Media Queries para responsividad */
+@media (max-width: 767.98px) {
+    .titulo-principal {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .texto-descripcion {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .texto-bienvenida {
+        text-align: center;
+    }
+
+    .seccion-bienvenida {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+
+    .subtitulo-seccion {
+        font-size: 1rem;
+    }
+
+    .imagen-proyecto {
+        height: 180px;
+    }
+    
+    .img-fluid {
+        opacity: 1; /* Make it fully visible on small screens */
+    }
+
+}    
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titulo-principal {
+        font-size: 3.8rem;
+    }
+
+    .texto-descripcion {
+        font-size: 1.1rem;
+    }
+
+    .imagen-proyecto {
+        height: 220px;
+    }
+
+    .img-fluid {
+        opacity: 1; 
+    }
+}
+
+
+
+#toggleMusicButton {
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+
+    
+    background-color: #E23D28; 
+    color: #FFFFFF; 
+    border: 2px solid #F2994A; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+    
+
+    
+    padding: 12px 25px; 
+    border-radius: 8px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease; 
+}
+
+
+#toggleMusicButton:hover {
+    background-color: #F2994A; 
+    border-color: #E23D28; 
+    color: #222222; 
+    transform: translateY(-2px); 
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+}
+
+
+#toggleMusicButton:active {
+    background-color: #FFD700; 
+    border-color: #E23D28;
+    color: #222222;
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    width: 100%;
+    
+    opacity: 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.img-fluid:hover {
+    transform: translateY(-20px);
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+}
+
+
+.start-experience-button {
+    
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; 
+     
+    background-color: #E6122B; 
+    color: #fcfcfc; 
+    border: 3px solid #F2994A; 
+    border-radius: 15px; 
+    padding: 20px 40px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+    cursor: url('./Assets/cursoreva.cur'), auto !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(230, 18, 43, 0.6); 
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    
+    
+    animation: pulse 2s infinite alternate;
+    
+}
+
+.start-experience-button:hover {
+    
+    background-color: #F2994A; 
+    
+    border-color: #E6122B;
+    color: #2c3e50; 
+    cursor: url('./Assets/cursoreva.cur'), auto;
+    transform: translate(-50%, -50%) scale(1.03); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 0 30px rgba(242, 153, 74, 0.7); 
+}
+
+.start-experience-button:active {
+    
+    transform: translate(-50%, -50%) scale(0.98); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(230, 18, 43, 0.6);
+    }
+    100% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 50px rgba(230, 18, 43, 0.9);
+    }
+}
+
+
+body.overlay-active {
+    background-color: #2c3e50; 
+    
+    background:
+        linear-gradient(to bottom,
+            rgba(226, 61, 40, 0.5), 
+            rgba(242, 153, 74, 0.5)  
+        ),
+        url('./Assets/nerv.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+   
+    
+    min-height: 100vh; 
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+
+    visibility: visible;
+    opacity: 1;
+    
+    transition: background-color 0.5s ease, background-image 0.5s ease;
+}
+
+
+body.overlay-active > *:not(.start-experience-button) {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+       
+}
+
+
+
+
+
+.seccion-bienvenida .img-fluid {
+    opacity: 0; 
+   
+    border: 7px solid #F2994A; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: opacity 3s ease-out, transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Add transition for border and filter */
+}
+
+
+.seccion-bienvenida .img-fluid:hover {
+    transform: translateY(-20px); 
+    cursor: url('./Assets/cursoreva.cur'), pointer;
+    
+    filter: brightness(150%) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))
+            drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+    
+    border: 7px solid #FFFFFF; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.seccion-bienvenida .enlace-icono .icono-social:hover {
+    filter: brightness(150%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.9))
+            drop-shadow(0 0 15px rgba(255, 255, 255, 0.7))
+            drop-shadow(0 0 25px rgba(255, 255, 255, 0.5));
+    transition: filter 0.3s ease;
+}
